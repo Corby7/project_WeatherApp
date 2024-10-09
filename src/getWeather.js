@@ -17,6 +17,7 @@ export default async function getWeather(location) {
       forecast: data.days,
     };
     console.log(weatherData);
+    return weatherData;
   } catch (error) {
     console.log(error.message);
   }
